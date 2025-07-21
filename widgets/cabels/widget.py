@@ -2,8 +2,8 @@
 
 # Простые переменные
 item_name = "USB-кабель"
-stock_count = 10
-unit_price = 290
+stock_count = 100
+unit_price = 500
 chart_type = "bar"
 
 # Результат для отображения
