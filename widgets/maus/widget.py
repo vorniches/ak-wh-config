@@ -5,9 +5,9 @@ def calculate_total_price(price, qty):
     return price * qty
 
 # Входные данные (переменные)
-product_name = "Наушники Bluetooth"
-unit_price = 1790
-quantity = 8
+product_name = "Maus"
+unit_price = 150
+quantity = 15
 
 # Вызов функции
 total = calculate_total_price(unit_price, quantity)
