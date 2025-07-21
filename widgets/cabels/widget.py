@@ -6,6 +6,8 @@ stock_count = 100
 unit_price = 500
 chart_type = "bar"
 
+unit_price = unit_price - (unit_price * 0.1)
+
 # Результат для отображения
 RESULT = {
     "title": f"Товар: {item_name}",
