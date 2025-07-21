@@ -4,6 +4,10 @@
 def calculate_total_price(price, qty):
     return price * qty
 
+def discount(price, percent):
+    price = price - (price * percent)
+    return price
+
 # Входные данные (переменные)
 product_name = "Maus"
 unit_price = 150
@@ -11,6 +15,7 @@ quantity = 15
 
 # Вызов функции
 total = calculate_total_price(unit_price, quantity)
+total = discount(total, 0.2)
 
 RESULT = {
     "title": f"Товар: {product_name}",
