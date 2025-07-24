@@ -1,7 +1,7 @@
 # Уровень 2 — Условия
 
 # Место на складе
-current_space = 120     # свободное место в м²
+current_space = 200     # свободное место в м²
 total_space = 200            # общая площадь склада
 
 # Подсказка: здесь пока нет условий — нужно будет написать их самому
@@ -11,7 +11,7 @@ total_space = 200            # общая площадь склада
 status = "UNKNOWN"
 label = "не определено"
 
-if current_space > total_space:
+if current_space >= total_space:
     status = "WARNING"
     label = "STOP"
 else:
