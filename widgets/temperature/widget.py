@@ -1,7 +1,7 @@
 # Уровень 2 — Условия
 
 # Температура на складе
-current_temperature = 17.5  # текущая температура в градусах
+current_temperature = 15  # текущая температура в градусах
 optimal_min = 16
 optimal_max = 22
 
