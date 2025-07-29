@@ -1,28 +1,36 @@
-# Уровень 2 — Условия
-
 # Температура на складе
 current_temperature = 150  # текущая температура в градусах
-optimal_min = 16
-optimal_max = 22
+optimal_max = 22 # оптимально максимальная
+optimal_min = 16 # оптимально минимальная
 
-def tem_status(current_temperature, optimal_max, optimal_min):
-    if current_temperature > optimal_max:
+# Условия
+def tem_status(current_temperature, optimal_max, optimal_min): # функция с аргументами
+    if current_temperature > optimal_max: # если
         status = "TOO_HOT"
         label = "жарко"
-    elif current_temperature < optimal_min:
+    elif current_temperature < optimal_min: # иначе если
         status = "TOO_COLD"
         label = "холодно"
-    else:
+    else: # иначе
         status = "OK"
         label = "в норме"
         
     # print(status, label)
-    return status
+    return status # возврат только статуса
 
 status = tem_status(current_temperature, optimal_max, optimal_min) #аргументы
-print(status)
+print(status) # печатает TOO_HOT, т к 150 > 22
 status = tem_status(28, 35, 10) #аргументы
+print(status) # 28 внутри диапазона, печатает ОК
+status = tem_status(8, 25, 19)
 print(status)
+
+# current_temperature = 11  # текущая температура в градусах
+# optimal_max = 33 # оптимально максимальная
+# optimal_min = 17 # оптимально минимальная
+
+# status = tem_status(current_temperature, optimal_max, optimal_min)
+# print()
 
 # # Данные для пайчарта (относительные проценты)
 # chart_data = [
