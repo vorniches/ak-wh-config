@@ -4,13 +4,18 @@
 shipments = [
     {"item": "Клавиатура", "qty": 4},
     {"item": "Мышь", "qty": 6},
-    {"item": "Кабель HDMI", "qty": 2},
 ]
 
 # Суммарное количество и данные для графика
-total_items = 0
 
-for shipment in shipments:
-    total_items += shipment["qty"]
-
-print(total_items)
+def count_items(shipments):
+    total_items = 0
+    if len(shipments) >= 3:
+        for item in shipments:
+            total_items += item["qty"]
+    else:
+        print("Too few items")
+    
+    return total_items
+    
+print(count_items(shipments))
